@@ -32,7 +32,7 @@
     {
         "text": "Other than not being a fan of click pads (industry standard these days) and the lousy internal speakers, it's hard for me to find things about this notebook I don't like, especially considering the $350 price tag.",
         "span": "price tag",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Other than not being a fan of click pads (industry standard these days) and the lousy internal speakers, it's hard for me to find things about this notebook I don't like, especially considering the $350 price tag.",
@@ -62,7 +62,7 @@
     {
         "text": "Sure it's not light and slim but the features make up for it 100%.",
         "span": "features",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "I am pleased with the fast log on, speedy WiFi connection and the long battery life (>6 hrs).",
@@ -127,7 +127,7 @@
     {
         "text": "The battery life is excellent- 6-7 hours without charging.",
         "span": "battery life",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I've had my computer for 2 weeks already and it works perfectly.",
@@ -137,7 +137,7 @@
     {
         "text": "And I may be the only one but I am really liking Windows 8.",
         "span": "Windows 8",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "The baterry is very longer.",
@@ -182,7 +182,7 @@
     {
         "text": "It's not inexpensive but the Hardware performance is impressive for a computer this small.",
         "span": "Hardware performance",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "This thing is awesome, everything always works, everything is always easy to set up, everything is compatible, its literally everything I could ask for.",
@@ -262,7 +262,7 @@
     {
         "text": "The new MBP offers great portability and gives us confidence that we are not going to need to purchase a new laptop in 18 months.",
         "span": "portability",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "The criticism has waned, and now I'd be the first to recommend an Air for truly portable computing.",
@@ -282,7 +282,7 @@
     {
         "text": "But the performance of Mac Mini is a huge disappointment.",
         "span": "performance",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "They don't just look good; they deliver excellent performance.",
@@ -317,12 +317,12 @@
     {
         "text": "However, I can refute that OSX is \"FAST\".",
         "span": "OSX",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "Enjoy using Microsoft Office!",
         "span": "Microsoft Office",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "Incredible graphics and brilliant colors.",
@@ -347,7 +347,7 @@
     {
         "text": "From the speed to the multi touch gestures this operating system beats Windows easily.",
         "span": "operating system",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "From the speed to the multi touch gestures this operating system beats Windows easily.",
@@ -367,7 +367,7 @@
     {
         "text": "I really like the size and I'm a fan of the ACERS.",
         "span": "size",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I opted for the SquareTrade 3-Year Computer Accidental Protection Warranty ($1500-2000) which also support \"accidents\" like drops and spills that are NOT covered by AppleCare.",
@@ -507,7 +507,7 @@
     {
         "text": "Startup times are incredibly long: over two minutes.",
         "span": "Startup times",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "Also stunning colors and speedy",
@@ -527,7 +527,7 @@
     {
         "text": "This mouse is terrific.",
         "span": "mouse",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "It is really thick around the battery.",
@@ -562,17 +562,17 @@
     {
         "text": "tried windows 8 and hated it !!!",
         "span": "windows 8",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "The price is higher than most lab top out there; however, he/she will get what they paid for, which is a great computer.",
         "span": "price",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "Set up was a breeze.",
         "span": "Set up",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "But I do NOT like Win8.",
@@ -602,7 +602,7 @@
     {
         "text": "I wanted it for it's mobility and man, this little bad boy is very nice.",
         "span": "mobility",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "The investment of a new MacBook Pro came at a price, but totally worth it for a good piece of mind.",
@@ -622,7 +622,7 @@
     {
         "text": "The sound is nice and loud; I don't have any problems with hearing anything.",
         "span": "sound",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "It is very slim, the track pad is very much impressed with me.",
@@ -637,7 +637,7 @@
     {
         "text": "Thank goodness for OpenOffice!",
         "span": "OpenOffice",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "Awesome form factor, great battery life, wonderful UX.",
@@ -712,7 +712,7 @@
     {
         "text": "I did swap out the hard drive for a Samsung 830 SSD which I highly recommend.",
         "span": "Samsung 830 SSD",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Starts up in a hurry and everything is ready to go.",
@@ -722,7 +722,7 @@
     {
         "text": "Yes, that's a good thing, but it's made from aluminum that scratches easily.",
         "span": "aluminum",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "Quick and has built in virus control.",
@@ -877,7 +877,7 @@
     {
         "text": "I have experienced no problems, works as anticipated.",
         "span": "works",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "System is running great.",
@@ -1142,17 +1142,17 @@
     {
         "text": "I like the design and ease of use with the keyboard, plenty of ports.",
         "span": "design",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like the design and ease of use with the keyboard, plenty of ports.",
         "span": "keyboard",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like the design and ease of use with the keyboard, plenty of ports.",
         "span": "ports",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "it definitely beats my old mac and the service was great.",
@@ -1172,7 +1172,7 @@
     {
         "text": "I like the lighted screen at night.",
         "span": "lighted screen",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "It is really easy to use and it is quick to start up.",
@@ -1202,7 +1202,7 @@
     {
         "text": "And mine had broke but I sent it in under warranty-no problems.",
         "span": "warranty",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "It's fast, light, and is perfect for media editing, which is mostly why I bought it in the first place.",
@@ -1232,32 +1232,32 @@
     {
         "text": "!Excelent performance, usability, presentation and time response.",
         "span": "performance",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "!Excelent performance, usability, presentation and time response.",
         "span": "usability",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "!Excelent performance, usability, presentation and time response.",
         "span": "presentation",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "!Excelent performance, usability, presentation and time response.",
         "span": "time response",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "The smaller size was a bonus because of space restrictions.",
         "span": "size",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I blame the Mac OS.",
         "span": "Mac OS",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "In fact I still use manyLegacy programs (Appleworks, FileMaker Pro, Quicken, Photoshop etc)!",
@@ -1287,7 +1287,7 @@
     {
         "text": "I like the operating system.",
         "span": "operating system",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I love the form factor.",
@@ -1377,7 +1377,7 @@
     {
         "text": "MY TRACKPAD IS NOT WORKING.",
         "span": "TRACKPAD",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "It looks and feels solid, with a flawless finish.",
@@ -1552,12 +1552,12 @@
     {
         "text": "THE CUSTOMER SERVICE IS TERRIFIC!!",
         "span": "CUSTOMER SERVICE",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "My last laptop was a 17\" ASUS gaming machine, which performed admirably, but having since built my own desktop and really settling into the college life, I found myself wanting something smaller and less cumbersome, not to mention that the ASUS had been slowly developing problems ever since I bought it about 4 years ago.",
         "span": "performed",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "However, it did not have any scratches, ZERO battery cycle count (pretty surprised), and all the hardware seemed to be working perfectly.",
@@ -1587,17 +1587,17 @@
     {
         "text": "I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",
         "span": "storage",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",
         "span": "screen",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "I needed a laptop with big storage, a nice screen and fast so I can photoshop without any problem.",
         "span": "photoshop",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "I like coming back to Mac OS but this laptop is lacking in speaker quality compared to my $400  old HP laptop.",
@@ -1607,7 +1607,7 @@
     {
         "text": "I like coming back to Mac OS but this laptop is lacking in speaker quality compared to my $400  old HP laptop.",
         "span": "speaker quality",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "Shipped very quickly and safely.",
@@ -1637,12 +1637,12 @@
     {
         "text": "I like the design and its features but there are somethings I think needs to be improved.",
         "span": "design",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like the design and its features but there are somethings I think needs to be improved.",
         "span": "features",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "There were small problems with Mac office.",
@@ -1707,7 +1707,7 @@
     {
         "text": "The only thing I dislike is the touchpad, alot of the times its unresponsive and does things I dont want it too, I would recommend using a mouse with it.",
         "span": "touchpad",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "The only thing I dislike is the touchpad, alot of the times its unresponsive and does things I dont want it too, I would recommend using a mouse with it.",
@@ -1772,7 +1772,7 @@
     {
         "text": "They are simpler to use.",
         "span": "use",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "!so nice .. stable .. fast .. now i got my SSD !",
@@ -1797,7 +1797,7 @@
     {
         "text": "You just cannot beat the functionality of an Apple device.",
         "span": "functionality",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "Yet my mac continues to function properly.",
@@ -1827,7 +1827,7 @@
     {
         "text": "I want the portability of a tablet, without the limitations of a tablet and that's where this laptop comes into play.",
         "span": "portability",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Mac tutorials do help.",
@@ -1862,12 +1862,12 @@
     {
         "text": "Logic board utterly fried, cried, and laid down and died.",
         "span": "Logic board",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "The sound was crappy even when you turn up the volume still the same results.",
         "span": "sound",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "The sound was crappy even when you turn up the volume still the same results.",
@@ -2032,12 +2032,12 @@
     {
         "text": "Not too expense and has enough storage for most users and many ports.",
         "span": "storage",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Not too expense and has enough storage for most users and many ports.",
         "span": "ports",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "The audio volume is quite low and virtually unusable in a room with any background activity.",
@@ -2177,12 +2177,12 @@
     {
         "text": "Soft touch, anodized aluminum with laser cut precision and no flaws.",
         "span": "touch",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Soft touch, anodized aluminum with laser cut precision and no flaws.",
         "span": "anodized aluminum",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "Simple details, crafted aluminium and real glass make this laptop blow away the other plastic ridden, bulky sticker filled laptops.",
@@ -2292,7 +2292,7 @@
     {
         "text": "The battery was completely dead, in fact it had grown about a quarter inch thick lump on the underside.",
         "span": "battery",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "if yo like practicality this is the laptop for you.",
@@ -2317,7 +2317,7 @@
     {
         "text": "CONS: Price is a bit ridiculous, kinda heavy.",
         "span": "Price",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "The troubleshooting said it was the AC adaptor so we ordered a new one.",
@@ -2462,12 +2462,12 @@
     {
         "text": "I bought this Mac book pro along with a new 27\" iMac and while they are still light years more reliable than a PC I have noticed a decline in the reliability of my Mac computers.",
         "span": "reliability",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "The sound as mentioned earlier isn't the best, but it can be solved with headphones.",
         "span": "sound",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "The sound as mentioned earlier isn't the best, but it can be solved with headphones.",
@@ -2557,17 +2557,7 @@
     {
         "text": "Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",
         "span": "ventilation system",
-        "label": "positive"
-    },
-    {
-        "text": "Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",
-        "span": "watching videos",
-        "label": "positive"
-    },
-    {
-        "text": "Additionally, there is barely a ventilation system in the computer, and even the simple activity of watching videos let alone playing steam games causes the laptop to get very very hot, and in fact impossible to keep on lap.",
-        "span": "playing steam games",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "Chatting with Acer support, I was advised the problem was corrupted operating system files.",
@@ -2657,12 +2647,12 @@
     {
         "text": "At home and the office it gets plugged into an external 24\" LCD screen, so built in screen size is not terribly important.",
         "span": "built in screen size",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "At home and the office it gets plugged into an external 24\" LCD screen, so built in screen size is not terribly important.",
         "span": "external 24\" LCD screen",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "Just beware no DVD slot so when I went to install software I had on CD I couldn't.",
@@ -2677,7 +2667,7 @@
     {
         "text": "I bought it to be able to dedicate a small, portable laptop to my writing and was surprised to learn that I needed to buy a word processing program to do so.",
         "span": "word processing program",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "This version of MacBook Pro runs on a third-generation CPU (\"Ivy Bridge\"), not the latest fourth-generation Haswell CPU the 2013 version has.",
@@ -2742,27 +2732,27 @@
     {
         "text": "The case is now slightly larger than the previous generation, but the lack of an external power supply justifies the small increase in size.",
         "span": "case",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "The case is now slightly larger than the previous generation, but the lack of an external power supply justifies the small increase in size.",
         "span": "size",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "The case is now slightly larger than the previous generation, but the lack of an external power supply justifies the small increase in size.",
         "span": "external power supply",
-        "label": "negative"
+        "label": "neutral"
     },
     {
         "text": "I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",
         "span": "wireless mouse",
-        "label": "positive"
+        "label": "neutral"
     },
     {
         "text": "I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",
         "span": "pad",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",
@@ -2772,7 +2762,7 @@
     {
         "text": "I had to buy a wireless mouse to go with it, as I am old school and hate the pad, but knew that before I bought it, now it works great, need to get adjusted to the key board, as I am used to a bigger one and pounding.",
         "span": "key board",
-        "label": "positive"
+        "label": "neutral"
     },
     {
         "text": "When considering a Mac, look at the total cost of ownership and not just the initial price tag.",
@@ -2825,14 +2815,14 @@
         "label": "positive"
     },
     {
-        "text": "The nicest  part is the low heat output and ultra quiet operation.",
+        "text": "The nicest part is the low heat output and ultra quiet operation.",
         "span": "heat output",
-        "label": "neutral"
+        "label": "positive"
     },
     {
-        "text": "The nicest  part is the low heat output and ultra quiet operation.",
+        "text": "The nicest part is the low heat output and ultra quiet operation.",
         "span": "operation",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I will upgrade the ram myself (because with this model you can you can do it) later on.",
@@ -2897,12 +2887,12 @@
     {
         "text": "I like the brightness and adjustments.",
         "span": "brightness",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like the brightness and adjustments.",
         "span": "adjustments",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I only wish this mac had a CD/DVD player built in.",
@@ -2917,12 +2907,12 @@
     {
         "text": "The only thing I miss are the \"Home/End\" type keys and other things that I grew accustomed to after so long.",
         "span": "\"Home/End\" type keys",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "So happy with this purchase, I just wish it came with Microsoft Word.",
         "span": "Microsoft Word",
-        "label": "positive"
+        "label": "negative"
     },
     {
         "text": "It has enough memory and speed to run my business with all the flexibility that comes with a laptop.",
@@ -3112,32 +3102,27 @@
     {
         "text": "I like iTunes, the apparent security, the Mini form factor, all the nice graphics stuff.",
         "span": "iTunes",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like iTunes, the apparent security, the Mini form factor, all the nice graphics stuff.",
         "span": "security",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like iTunes, the apparent security, the Mini form factor, all the nice graphics stuff.",
         "span": "Mini form factor",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "I like iTunes, the apparent security, the Mini form factor, all the nice graphics stuff.",
         "span": "graphics stuff",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "The first time I used the card reader it took half an hour and a pair of tweezers to remove the card.",
         "span": "card reader",
-        "label": "neutral"
-    },
-    {
-        "text": "The first time I used the card reader it took half an hour and a pair of tweezers to remove the card.",
-        "span": "remove the card",
-        "label": "neutral"
+        "label": "negative"
     },
     {
         "text": "After replacing the spinning hard disk with an ssd drive, my mac is just flying.",
@@ -3147,7 +3132,7 @@
     {
         "text": "After replacing the spinning hard disk with an ssd drive, my mac is just flying.",
         "span": "ssd drive",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "I know some people complained about HDMI issues but they released a firmware patch to address that issue.",
@@ -3157,7 +3142,7 @@
     {
         "text": "I know some people complained about HDMI issues but they released a firmware patch to address that issue.",
         "span": "firmware patch",
-        "label": "negative"
+        "label": "positive"
     },
     {
         "text": "With the needs of a professional photographer I generally need to keep up with the best specs.",
@@ -3262,11 +3247,11 @@
     {
         "text": "Screen - although some people might complain about low res which I think is ridiculous.",
         "span": "Screen",
-        "label": "neutral"
+        "label": "positive"
     },
     {
         "text": "Screen - although some people might complain about low res which I think is ridiculous.",
         "span": "res",
-        "label": "neutral"
+        "label": "positive"
     }
 ]
