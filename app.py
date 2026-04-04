@@ -2,7 +2,9 @@ import gradio as gr
 import json
 import re
 import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, T5TokenizerFast
+
+from peft import PeftModel
+from transformers import AutoModelForSeq2SeqLM, T5TokenizerFast, AutoTokenizer
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
@@ -69,8 +71,10 @@ print(f"Vectorstore ready")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 print("Loading BART model ...")
-tokenizer = AutoTokenizer.from_pretrained("whismyswift/BART_Summary")
-model = AutoModelForSeq2SeqLM.from_pretrained("whismyswift/BART_Summary", dtype="auto")
+
+tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base")
+base_model = AutoModelForSeq2SeqLM.from_pretrained("facebook/bart-base")
+model = PeftModel.from_pretrained(base_model, "whismyswift/BART_Summary")
 model = model.to(device)
 
 print("Loading T5 model ...")

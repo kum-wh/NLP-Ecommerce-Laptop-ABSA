@@ -1,6 +1,7 @@
 gradio
 transformers
 torch
+peft
 sentence-transformers
 langchain-chroma
 langchain-community
