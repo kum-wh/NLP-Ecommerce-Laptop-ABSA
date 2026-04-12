@@ -2,13 +2,14 @@ import gradio as gr
 import json
 import re
 import torch
-
-from peft import PeftModel
-from transformers import AutoModelForSeq2SeqLM, T5TokenizerFast, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, T5TokenizerFast
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from sklearn.cluster import AgglomerativeClustering
+from sentence_transformers import SentenceTransformer
+from collections import defaultdict
 
 max_input_length = 584
 max_target_length = 128
@@ -71,10 +72,8 @@ print(f"Vectorstore ready")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 print("Loading BART model ...")
-
-tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base")
-base_model = AutoModelForSeq2SeqLM.from_pretrained("facebook/bart-base")
-model = PeftModel.from_pretrained(base_model, "whismyswift/BART_Summary")
+tokenizer = AutoTokenizer.from_pretrained("whismyswift/BART_Summary")
+model = AutoModelForSeq2SeqLM.from_pretrained("whismyswift/BART_Summary", dtype="auto")
 model = model.to(device)
 
 print("Loading T5 model ...")
@@ -82,13 +81,15 @@ T5_tokenizer = T5TokenizerFast.from_pretrained("whismyswift/t5-absa-2")
 T5_model = AutoModelForSeq2SeqLM.from_pretrained("whismyswift/t5-absa-2")
 T5_model = T5_model.to(device)
 
+aspect_embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+
 print(f"Models loaded.")
 
 # ──────────────────────────────────────────────
 # 4. Build context string from reviews
 # ──────────────────────────────────────────────
 
-def preprocess_single_example(example):
+def preprocess_single_example(example, aspects):
     instruction = "Summarize customer reviews about the specific aspect mentioned in the query."
     r_processed = " ".join(example['reviews_input']) if isinstance(example['reviews_input'], list) else str(example['reviews_input'])
     input_text = f"instruction: {instruction} Query: {example['question']} Reviews: {r_processed}"
@@ -153,6 +154,8 @@ def chat(message, history, product_name):
         ]
 
     absa_per_review = []
+    aspects_list = []
+    sentiments_list = []
     for r in similar_reviews:
         sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', r.page_content) if s.strip()]
         aspects = []
@@ -161,13 +164,19 @@ def chat(message, history, product_name):
             if result is not None:
                 aspects.append(result)
         absa_per_review.append(aspects)
+        reviews_with_aspect = r.page_content + " Aspects: "
+        for i in aspects:
+            reviews_with_aspect += "(" + i['aspect'] + ": " + i['sentiment'] + ")"
+            aspects_list.append(i['aspect'])
+            sentiments_list.append(i['sentiment'])
+        similar_reviews_with_aspect.append(reviews_with_aspect)
 
     sample_input = {
         "question": message,
-        "reviews_input": [r.page_content for r in similar_reviews]
+        "reviews_input": similar_reviews_with_aspect
     }
 
-    processed_sample = preprocess_single_example(sample_input)
+    processed_sample = preprocess_single_example(sample_input, absa_per_review)
 
     # Move to GPU if available
     input_ids = processed_sample['input_ids'].to(model.device)
@@ -185,6 +194,37 @@ def chat(message, history, product_name):
         )
 
     decoded_summary = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
+    
+    if aspects_list:
+      aspect_embeddings = aspect_embedding_model.encode(aspects_list)
+
+      clustering = AgglomerativeClustering(
+          n_clusters=None,
+          distance_threshold=0.15,
+          metric="cosine",
+          linkage="average"
+      )
+      labels = clustering.fit_predict(aspect_embeddings)
+
+      # group and count sentiments per cluster
+      clusters = defaultdict(lambda: {"members": [], "positive": 0, "negative": 0, "neutral": 0})
+      for aspect, label, absa in zip(aspects_list, labels, sentiments_list):
+          clusters[label]["members"].append(aspect)
+          sentiment = absa.lower()
+          if sentiment in clusters[label]:
+              clusters[label][sentiment] += 1
+
+      cluster_summary_lines = []
+      for label, info in clusters.items():
+          representative = min(info["members"], key=len)
+          total = info["positive"] + info["negative"] + info["neutral"]
+          cluster_summary_lines.append(
+              f"{representative}: +{info['positive']} -{info['negative']} ~{info['neutral']} ({total} mentions)"
+          )
+
+      cluster_summary_text = "\n".join(cluster_summary_lines)
+    else:
+      cluster_summary_text = "No aspects found."
 
     reviews_text = []
     for i, (r, aspects) in enumerate(zip(similar_reviews, absa_per_review)):
@@ -194,7 +234,13 @@ def chat(message, history, product_name):
             review_line += f"  \n*Aspects: {aspects_line}*"
         reviews_text.append(review_line)
 
-    response = f"**Summary:**\n{decoded_summary}\n\n---\n\n**Retrieved Reviews:**\n\n" + "\n\n".join(reviews_text)
+    response = (
+        f"**Summary:**\n{decoded_summary}\n\n"
+        f"---\n\n"
+        f"**Aspect Sentiment Counts:**\n{cluster_summary_text}\n\n"
+        f"---\n\n"
+        f"**Retrieved Reviews:**\n\n" + "\n\n".join(reviews_text)
+    )
 
     return history + [
         {"role": "user", "content": message},
