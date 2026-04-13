@@ -156,6 +156,7 @@ def chat(message, history, product_name):
     absa_per_review = []
     aspects_list = []
     sentiments_list = []
+    similar_reviews_with_aspect = []
     for r in similar_reviews:
         sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', r.page_content) if s.strip()]
         aspects = []
